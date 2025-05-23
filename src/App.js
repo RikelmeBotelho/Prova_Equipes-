@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello Word</h1>
-    </div>
-=======
 import React from 'react';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
@@ -65,7 +55,6 @@ function App() {
         </Router>
       </AuthProvider>
     </ChakraProvider>
->>>>>>> 26f5f1c0 (first commit)
   );
 }
 
