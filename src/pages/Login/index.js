@@ -36,13 +36,23 @@ const Login = () => {
   };
 
   return (
-    <Box minH="100vh" display="flex" flexDirection="column" bg={bgColor}>
+      <Box
+          minH="100vh"
+          display="flex"
+          flexDirection="column"
+          backgroundColor={'background: #03376b;\n' +
+              'background: linear-gradient(181deg, rgba(0, 31, 63, 1) 20%, rgba(1, 67, 133, 1) 84%);'} c
+          bgSize="cover"
+          bgPosition="center"
+          bgRepeat="no-repeat"
+      >
+
       <Header />
       
       <Container maxW="container.md" py={10} flex="1">
         <VStack spacing={6} align="stretch">
-          <Heading as="h1" size="xl" textAlign="center" mb={4}>
-            Login
+          <Heading as="h1" size="xl" textAlign="center" mb={4} color={"white"}>
+            Seja Bem Vindo de Volta
           </Heading>
           
           {error && (
@@ -55,7 +65,7 @@ const Login = () => {
           <Box 
             borderWidth="1px" 
             borderRadius="lg" 
-            p={6} 
+            p={6}
             bg={cardBg}
             boxShadow="md"
             width="100%"

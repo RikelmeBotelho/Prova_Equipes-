@@ -37,13 +37,23 @@ const Register = () => {
   };
 
   return (
-    <Box minH="100vh" display="flex" flexDirection="column" bg={bgColor}>
+      <Box
+          minH="100vh"
+          display="flex"
+          flexDirection="column"
+          bg={bgColor}
+          backgroundColor={'background: #03376b;\n' +
+              'background: linear-gradient(181deg, rgba(0, 31, 63, 1) 20%, rgba(1, 67, 133, 1) 84%);'} c
+          backgroundSize="cover"
+          backgroundPosition="center"
+          backgroundRepeat="no-repeat"
+      >
       <Header />
       
       <Container maxW="container.md" py={10} flex="1">
         <VStack spacing={6} align="stretch">
-          <Heading as="h1" size="xl" textAlign="center" mb={4}>
-            Registrar Nova Conta
+          <Heading as="h1" size="xl" textAlign="center" mb={4} color="#FFFFFF">
+            Novo por aqui? Crie uma nova Conta
           </Heading>
           
           {error && (

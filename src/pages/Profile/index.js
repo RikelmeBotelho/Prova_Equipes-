@@ -105,12 +105,21 @@ const Profile = () => {
   }
 
   return (
-    <Box minH="100vh" display="flex" flexDirection="column" bg={bgColor}>
+      <Box
+          minH="100vh"
+          display="flex"
+          flexDirection="column"
+          bgImage="url('https://videos.openai.com/vg-assets/assets%2Ftask_01jvza04jvfjebm9km2cqzbwze%2F1748028681_img_1.webp?st=2025-05-23T18%3A28%3A36Z&se=2025-05-29T19%3A28%3A36Z&sks=b&skt=2025-05-23T18%3A28%3A36Z&ske=2025-05-29T19%3A28%3A36Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=N0%2FJIk5e7LmbYiFmLH8n7e%2Bh%2BfEaFRQIjt1%2BlKaR3C0%3D&az=oaivgprodscus')"
+          bgSize="cover"
+          bgPosition="center"
+          bgRepeat="no-repeat"
+      >
+
       <Header />
       
       <Container maxW="container.md" py={10} flex="1">
         <VStack spacing={6} align="stretch">
-          <Heading as="h1" size="xl" textAlign="center" mb={4}>
+          <Heading as="h1" size="xl" textAlign="center" mb={4} color={"#FFFFFF"}>
             Meu Perfil
           </Heading>
           
@@ -137,7 +146,7 @@ const Profile = () => {
               <Box mt={8} p={6} borderWidth="1px" borderRadius="lg" bg={cardBg}>
                 <VStack spacing={4} align="stretch">
                   <Heading as="h3" size="md" color="red.500">
-                    Zona de Perigo
+                   Atenção!
                   </Heading>
                   <Text>
                     Ao excluir sua conta, todos os seus dados serão permanentemente removidos e não poderão ser recuperados.

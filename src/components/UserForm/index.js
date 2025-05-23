@@ -98,7 +98,7 @@ const UserForm = ({ initialValues, onSubmit, isRegister = false }) => {
                   id="descricao"
                   name="descricao"
                   variant="filled"
-                  placeholder="Uma breve descrição sobre você"
+                  placeholder="Fale um pouco sobre você"
                   resize="vertical"
                 />
                 <FormErrorMessage>{errors.descricao}</FormErrorMessage>
